@@ -1,0 +1,139 @@
+.questionBox {
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid #dadce0;
+  background: #fff;
+  padding: 16px;
+  margin: 16px 12px 0;
+  width: 388px;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.mathAssessment {
+  color: #1c4980;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  margin-bottom: 4px;
+}
+
+.job {
+  color: #1c4980;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  padding-right: 10px;
+  border-right: 1px solid #dadce0;
+}
+
+.dateContainer {
+  display: flex;
+  align-items: center;
+}
+
+.calenderIcon {
+  padding: 0 4px 0 10px;
+}
+
+.date {
+  color: #8da4bf;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.moreDetailContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time,
+.noOfQues {
+  color: #1c4980;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+}
+
+.timeHeading,
+.quesHeading {
+  color: #1c4980;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.quesHeading,
+.noOfQues {
+  margin-left: 14px;
+}
+
+.testDetail {
+  display: flex;
+}
+
+.shareContainer {
+  display: flex;
+  margin-left: 16px;
+}
+
+.shareTab {
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 1px solid #1c4980;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+}
+
+.share {
+  color: #1c4980;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+}
+
+.peopleJoinedContainer {
+  margin-left: 10px;
+  position: relative;
+  width:50px;
+}
+
+.firstPerson,
+.secondPerson {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 32.728px;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.firstPerson {
+  position: relative;
+  z-index:2;
+  left:39%;
+  background: #6548ee;
+}
+
+.secondPerson {
+  position: absolute;
+  z-index: 1;
+  right:14px;
+  top:0;
+  background:#E9407A;
+}

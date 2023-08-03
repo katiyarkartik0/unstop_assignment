@@ -1,0 +1,193 @@
+.overview {
+  margin-bottom: 24px;
+}
+
+.assesments {
+  margin-bottom: 30px;
+}
+
+.assesmentOverview {
+  color: #1c4980;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 16px;
+}
+
+.assignmentListContainer {
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid #dadce0;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.detailContainer {
+  padding: 16px 20px;
+  border-right: 1px solid #dadce0;
+  flex-grow: 1;
+}
+
+.detailBox {
+  padding: 16px 20px;
+  flex-grow: 1;
+}
+
+.heading {
+  color: #1c4980;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.6px;
+  margin-bottom: 16px;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #ebe8fd;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.count {
+  color: #1c4980;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-right: 5px;
+}
+
+.moreCount {
+  color: #05c165;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.totalCandidateDetail {
+  padding: 0 20px;
+  border-right: 1px solid #dadce0;
+}
+
+.candidateAttemptedExamDetail {
+  padding-left: 20px;
+}
+
+.candidateCount {
+  display: flex;
+  align-items: center;
+}
+
+.candidateDetail {
+  color: #1c4980;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.myAssessmentHeader {
+  color: #1c4980;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px;
+  padding-top: 16px;
+}
+
+.newAssementContainer {
+  box-sizing: border-box;
+  margin: 16px 12px 0;
+  border-radius: 12px;
+  border: 1px dashed #dadce0;
+  background-color: #f6f8fa;
+  padding: 30px;
+  width: 388px;
+  cursor: pointer;
+
+}
+
+.addQuestion {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.newAssessment {
+  margin-top: 10px;
+  color: #1c4980;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.newAssessmentContent {
+  margin-top: 12px;
+  color: #1c4980;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.questionBank {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  flex: 1;
+}
+
+.blankContainer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1176px) {
+  .assignmentListContainer {
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid #dadce0;
+    flex: 1;
+    flex-direction: column;
+  }
+  .detailContainer {
+    padding: 16px 20px;
+    border-bottom: 1px solid #dadce0;
+    border-right: none;
+    flex-grow: 1;
+  }
+  .candidateDetail {
+    color: #1c4980;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.8px;
+
+  }
+  .contentContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+}

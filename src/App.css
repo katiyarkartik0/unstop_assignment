@@ -1,0 +1,22 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appContainer {
+  display: flex;
+  background-color: #F6F8FA;
+}
+
+.pageContent {
+  padding:0 16px;
+  flex-grow: 1;
+}
+
+.assignmentContainer {
+  margin-top: 2px ;
+  background-color: white;
+  padding: 20px;
+}

@@ -1,0 +1,36 @@
+.navbar {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0 20px;
+  
+  display: flex;
+  height: 70px;
+  margin-top: 4px;
+  border-radius: 12px 12px 0px 0px;
+  align-items: center;
+}
+
+.assesmentHeading {
+  color: #1c4980;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 4px 20px 4px 0;
+  margin:16px 0;
+  border-right: 1px solid #dadce0;
+}
+
+.renderOption {
+  margin-left: 20px;
+  padding: 26px 0;
+  color: #1c4980;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid #0073E6;
+  color: #0073E6;
+}

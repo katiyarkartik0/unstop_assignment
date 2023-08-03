@@ -1,0 +1,38 @@
+.sideDrawer {
+  display: inline-flex;
+  padding: 16px 20px 20px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  height: 992px;
+  background-color: white;
+}
+
+.divider {
+  height: 1px;
+  border-top: 1px dashed #bacbd5;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.admin {
+  margin: 0 auto;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 22px;
+  border: 1px solid #d63500;
+  color: #d63500;
+  background-color: #fbebea;
+}
+
+.activeAssessment {
+  border-radius: 8px;
+  border: 1px solid #0073e6;
+  background: #e5f1fc;
+}
+
+.activeAssessment .sidebarContent {
+  color: #0073e6;
+}
