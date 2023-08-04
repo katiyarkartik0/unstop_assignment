@@ -15,7 +15,7 @@ const Navbar = ({toggleSideDrawer}) => {
         </div>
       )}
       <span className="assesmentHeading">Assesments</span>
-      <NavLink to="/myAssesments" className="renderOption">
+      <NavLink to="/" className="renderOption">
         My Assesments
       </NavLink>
       <NavLink to="/unstopAssesments" className="renderOption">

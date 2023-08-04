@@ -1,19 +1,19 @@
-import Assesment from "../../components/assesment/Assesment";
-
-import useDeviceDetect from "../../utils/useDeviceDetect";
-
-import Agenda from "../../icons/view_agenda.svg";
-import Candidate from "../../icons/candidates.svg";
-import Globe from "../../icons/globe.svg";
-import Purpose from "../../icons/share.svg";
-import AddIcon from "../../icons/add.svg";
-import Modal from "../../modal/Modal.js";
-import Search from "../../icons/search.svg";
-import Funnel from "../../icons/funnel.svg";
-import BarChart from "../../icons/bar_chart.svg";
-import "./MyAssesment.css";
-
 import { useEffect, useState } from "react";
+import useDeviceDetect from "utils/useDeviceDetect.js";
+
+import Assesment from "components/assesment/Assesment.js";
+import Modal from "modal/Modal";
+
+import Agenda from "icons/view_agenda.svg";
+import Candidate from "icons/candidates.svg";
+import Globe from "icons/globe.svg";
+import Purpose from "icons/share.svg";
+import AddIcon from "icons/add.svg";
+import Search from "icons/search.svg";
+import Funnel from "icons/funnel.svg";
+import BarChart from "icons/bar_chart.svg";
+
+import "./MyAssesment.css";
 
 const MyAssesment = () => {
   const [showModal, setShowModal] = useState(false);

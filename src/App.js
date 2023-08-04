@@ -38,7 +38,7 @@ function App() {
 
         <div className="assignmentContainer">
           <Routes>
-            <Route path="/myAssesments" element={<MyAssesment />}></Route>
+            <Route path="/" element={<MyAssesment />}></Route>
           </Routes>
         </div>
       </div>
