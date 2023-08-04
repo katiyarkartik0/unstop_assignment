@@ -8,6 +8,15 @@
   flex-shrink: 0;
   margin-bottom: 2px;
 }
+.optionsContainer-mobile {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: left;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  margin-bottom: 2px;
+}
 
 .sidebarContent {
   margin: 0;

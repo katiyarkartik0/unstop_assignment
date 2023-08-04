@@ -10,6 +10,21 @@
   align-items: center;
 }
 
+.assesmentIconContainer{
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #ebe8fd;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 .assesmentHeading {
   color: #1c4980;
   font-size: 20px;

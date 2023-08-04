@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
 import "./Skills.css";
+
 const Skills = () => {
   const [tags, setTags] = useState([]);
 

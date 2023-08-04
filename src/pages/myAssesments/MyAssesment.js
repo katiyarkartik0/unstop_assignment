@@ -1,27 +1,45 @@
 import Assesment from "../../components/assesment/Assesment";
 
+import useDeviceDetect from "../../utils/useDeviceDetect";
+
 import Agenda from "../../icons/view_agenda.svg";
 import Candidate from "../../icons/candidates.svg";
 import Globe from "../../icons/globe.svg";
 import Purpose from "../../icons/share.svg";
 import AddIcon from "../../icons/add.svg";
-import Modal from "../../modal/Modal.js"
+import Modal from "../../modal/Modal.js";
+import Search from "../../icons/search.svg";
+import Funnel from "../../icons/funnel.svg";
+import BarChart from "../../icons/bar_chart.svg";
 import "./MyAssesment.css";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 
 const MyAssesment = () => {
-  const [showModal,setShowModal] = useState(false);
-  const toggleModal = (event) =>{
-      setShowModal((prev)=>!prev)
-    
+  const [showModal, setShowModal] = useState(false);
+  const [isMobileView] = useDeviceDetect(window.innerWidth);
+  const [isOverviewVisible,setIsOverViewVisible] = useState(true)
+
+  useEffect(()=>{
+    if(!isMobileView){
+      setIsOverViewVisible(true)
+    }
+  },[isMobileView]);
+
+  const toggleOverview = () =>{
+    setIsOverViewVisible((prev)=>!prev)
   }
+
+  const toggleModal = (event) => {
+    setShowModal((prev) => !prev);
+  };
   return (
     <>
-    {showModal && <Modal toggleModal={toggleModal}/>}
-      <div className="overview">
+      {showModal && <Modal toggleModal={toggleModal} />}
+      <div className={`overview${isOverviewVisible?"":"-hide"}`}>
         <div className="assesmentOverview">Assesment overview</div>
         <div className="assignmentListContainer">
-          <div className="detailContainer">
+          <div className="assesmentContainer">
             <div className="heading"> Total Assessment</div>
             <div className="contentContainer">
               <div className="iconContainer">
@@ -31,7 +49,7 @@ const MyAssesment = () => {
             </div>
           </div>
 
-          <div className="detailContainer">
+          <div className="candidatesContainer">
             <div className="heading"> Candidates</div>
             <div className="contentContainer">
               <img src={Candidate} />
@@ -54,7 +72,7 @@ const MyAssesment = () => {
             </div>
           </div>
 
-          <div className="detailContainer">
+          <div className="candidatesSourceContainer">
             <div className="heading"> Candidates Source</div>
             <div className="contentContainer">
               <img src={Globe} />
@@ -85,7 +103,7 @@ const MyAssesment = () => {
             </div>
           </div>
 
-          <div className="detailBox">
+          <div className="totalPurposeContainer">
             <div className="heading"> Total Purpose</div>
             <div className="contentContainer">
               <div className="iconContainer">
@@ -97,9 +115,28 @@ const MyAssesment = () => {
         </div>
       </div>
       <div className="assesments">
-        <div className="myAssessmentHeader">My Assessment</div>
+        <div className="myAssesmentHeaderContainer">
+          <div className="myAssessmentHeader">My Assessment</div>
+          {isMobileView && (
+            <div className="assesmentIconsContainer">
+              <div className="assesmentIcon">
+                <img src={Search} />
+              </div>
+              <div className="assesmentIcon">
+                <img src={Funnel} />
+              </div>
+              <div className={`assesmentIcon${isOverviewVisible?"-active":""}`} onClick={toggleOverview}>
+                <img src={BarChart} />
+              </div>
+            </div>
+          )}
+        </div>
         <div className="questionBank">
-          <div className="newAssementContainer" name="newAssesment" onClick={toggleModal}>
+          <div
+            className="newAssementContainer"
+            name="newAssesment"
+            onClick={toggleModal}
+          >
             <div className="addQuestion">
               <img src={AddIcon} />
             </div>
@@ -122,4 +159,4 @@ const MyAssesment = () => {
     </>
   );
 };
-export default MyAssesment
+export default MyAssesment;

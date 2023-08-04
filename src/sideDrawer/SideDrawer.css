@@ -7,6 +7,38 @@
   flex-shrink: 0;
   height: 992px;
   background-color: white;
+  max-width: 170px;
+}
+
+.sideDrawer-mobile {
+  width: 315px;
+  height: 1074px;
+  left: 0;
+  padding: 40px 20px 10px 20px;
+  gap: 10px;
+  background: var(--secondary-5, #f2f8fe);
+  transition: left 0.3s ease;
+  position: fixed;
+
+}
+.sideDrawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sideDrawer-mobile-hide {
+  gap: 10px;
+  padding: 40px 20px 10px 20px;
+  position: fixed;
+  left:-355px;
+  width: 315px;
+  transition: left 0.3s ease;
+  background: var(--secondary-5, #f2f8fe);
+  height: 1074px;
+}
+.closeButton{
+  cursor: pointer;
 }
 
 .divider {
@@ -25,8 +57,20 @@
   border: 1px solid #d63500;
   color: #d63500;
   background-color: #fbebea;
+  position: relative;
+  top: -80px;
 }
+.admin-mobile {
+  margin: 0 auto;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 22px;
+  border: 1px solid #d63500;
+  color: #d63500;
+  background-color: #fbebea;
 
+}
 .activeAssessment {
   border-radius: 8px;
   border: 1px solid #0073e6;

@@ -1,16 +1,28 @@
-import { NavLink} from "react-router-dom"
-import "./Navbar.css"
-const Navbar = () =>{
-    return (
-        <div className="navbar">
-        <span className="assesmentHeading">
+import { NavLink } from "react-router-dom";
+import useDeviceDetect from "utils/useDeviceDetect";
 
-        Assesments
-        </span>
-        <NavLink to="/myAssesments" className="renderOption">My Assesments</NavLink>
-        <NavLink to="/unstopAssesments" className="renderOption">Unstop Assesments</NavLink>
+import Segment from "icons/segment.svg";
+
+import "./Navbar.css";
+
+const Navbar = ({toggleSideDrawer}) => {
+  const [isMobileView] = useDeviceDetect(window.innerWidth);
+  return (
+    <div className="navbar">
+      {isMobileView && (
+        <div className="assesmentIconContainer" onClick={toggleSideDrawer}>
+          <img src={Segment}></img>
         </div>
-    )
-}
+      )}
+      <span className="assesmentHeading">Assesments</span>
+      <NavLink to="/myAssesments" className="renderOption">
+        My Assesments
+      </NavLink>
+      <NavLink to="/unstopAssesments" className="renderOption">
+        Unstop Assesments
+      </NavLink>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

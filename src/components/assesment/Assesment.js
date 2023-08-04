@@ -1,7 +1,7 @@
-import Assessment from "../../icons/assessment.svg";
-import More from "../../icons/three_dots.svg";
-import Calender from "../../icons/calendar_today.svg";
-import Share from "../../icons/link.svg";
+import Assessment from "icons/assessment.svg";
+import More from "icons/three_dots.svg";
+import Calender from "icons/calendar_today.svg";
+import Share from "icons/link.svg";
 
 import "./Assesment.css";
 

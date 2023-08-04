@@ -1,9 +1,11 @@
-import useDeviceDetect from "./utils/useDeviceDetect";
-import SideDrawer from "./sideDrawer/SideDrawer";
-import Navbar from "./navbar/Navbar";
-import { Route, Routes } from "react-router-dom";
-import MyAssesment from "./pages/myAssesments/MyAssesment";
 import { useEffect, useState } from "react";
+import useDeviceDetect from "utils/useDeviceDetect";
+import { Route, Routes } from "react-router-dom";
+
+import SideDrawer from "sideDrawer/SideDrawer";
+import Navbar from "navbar/Navbar";
+import MyAssesment from "pages/myAssesments/MyAssesment";
+
 import "./App.css";
 
 function App() {
@@ -26,17 +28,13 @@ function App() {
 
   return (
     <div className="appContainer">
-      {showSideDrawer ? (
-        <SideDrawer
-          isMobileView={isMobileView}
-          toggleSideDrawer={toggleSideDrawer}
-          showSideDrawer={showSideDrawer}
-        />
-      ) : (
-        <button onClick={toggleSideDrawer}>Hamburger</button>
-      )}
-      <div className="pageContent">
-        <Navbar isMobileView={isMobileView} />
+      <SideDrawer
+        isMobileView={isMobileView}
+        toggleSideDrawer={toggleSideDrawer}
+        showSideDrawer={showSideDrawer}
+      />
+      <div className={`pageContent`}>
+        <Navbar toggleSideDrawer={toggleSideDrawer} />
 
         <div className="assignmentContainer">
           <Routes>
